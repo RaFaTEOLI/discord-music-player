@@ -18,7 +18,7 @@ Package from version v7.0.0 is fully maintained by [SushiBtw](https://github.com
 # Installation
 *Node.JS v16 or newer is required to run this module.*
 ```sh
-npm install --save discord-music-player
+npm install --save @rafateoli/discord-music-player
 ```
 Install **@discordjs/opus**:
 ```sh
