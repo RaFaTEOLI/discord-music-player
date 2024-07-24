@@ -23,10 +23,10 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/SushiBtw/discord-music-player.git"
+    "url": "git+https://github.com/RaFaTEOLI/discord-music-player.git"
   },
   "bugs": {
-    "url": "https://github.com/SushiBtw/discord-music-player/issues"
+    "url": "https://github.com/RaFaTEOLI/discord-music-player/issues"
   },
   "homepage": "https://discord-music-player.js.org/",
   "author": "SushiBtw",
