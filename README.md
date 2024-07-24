@@ -1,6 +1,6 @@
 # Discord Music Player
-![npm](https://img.shields.io/npm/dt/discord-music-player?style=for-the-badge)
-![npm](https://img.shields.io/npm/v/discord-music-player?style=for-the-badge)
+![npm](https://img.shields.io/npm/d18m/%40rafateoli%2Fdiscord-music-player?style=for-the-badge)
+![npm](https://img.shields.io/npm/v/%40rafateoli%2Fdiscord-music-player?style=for-the-badge)
 ![CodeFactor Grade](https://img.shields.io/codefactor/grade/github/SushiBtw/discord-music-player?color=%2348aaf1&style=for-the-badge)
 
 ### Note: This is the v9 version of Discord Music Player for Discord.JS v14 & v13!
