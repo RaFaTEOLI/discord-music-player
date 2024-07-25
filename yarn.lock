@@ -5070,18 +5070,18 @@ source-map@^0.7.3:
   resolved "https://registry.yarnpkg.com/source-map/-/source-map-0.7.4.tgz#a9bbe705c9d8846f4e08ff6765acf0f1b0898656"
   integrity sha512-l3BikUxvPOcn5E74dZiq5BGsTb5yEwhaTSzccU6t4sDOH8NWJCstKO5QT2CvtFoK6F0saL7p9xHAqHOlCPJygA==
 
-spotify-uri@~3.0.3:
-  version "3.0.3"
-  resolved "https://registry.yarnpkg.com/spotify-uri/-/spotify-uri-3.0.3.tgz#d09ae7e013f12fe2c22eed06cda2463be220597b"
-  integrity sha512-mMstJ4dAMki6GbUjg94kp/h9ZH+7T7+ro/KUC00WVh+WKoLgMRrTKLkWMIwCZNO53Xa8DRHQw/6jwYtRZrVI3g==
+spotify-uri@~4.1.0:
+  version "4.1.0"
+  resolved "https://registry.yarnpkg.com/spotify-uri/-/spotify-uri-4.1.0.tgz#d1286b1922055e2b0e37b773ef2bff2c40e71010"
+  integrity sha512-SFpBt8pQqO7DOFBsdUjv3GxGZAKYP7UqcTflfE7h3YL1lynl/6Motq7NERoJJR8eF9kXQRSpcdMmV5ou84rbng==
 
-spotify-url-info@^3.1.7:
-  version "3.2.3"
-  resolved "https://registry.yarnpkg.com/spotify-url-info/-/spotify-url-info-3.2.3.tgz#915b8e07d5d12a4527df7e4be5f01023d19f2bc3"
-  integrity sha512-h7LCEM86kE68uWWAW0+NbKP+33qPC00SsbdJXzvmzNc18aIA/NukTi8gKZKEwHBENusLX0VRsHfIhyKDg7Fong==
+spotify-url-info@^3.2.16:
+  version "3.2.16"
+  resolved "https://registry.yarnpkg.com/spotify-url-info/-/spotify-url-info-3.2.16.tgz#7c14f6a03aff83407607d4d62a2771d14cce0431"
+  integrity sha512-szXt1PLt8lqhaXsTNYH7zPd+EBj6Ha0xtqitqicCijGX6x/jYvn6wgGaK2F1OQfJzx8lxDNfZbtarn4DxzaZ2Q==
   dependencies:
     himalaya "~1.1.0"
-    spotify-uri "~3.0.3"
+    spotify-uri "~4.1.0"
 
 sprintf-js@~1.0.2:
   version "1.0.3"
