@@ -1,4 +1,7 @@
 # Discord Music Player
+
+This fork is dedicated to fixing bugs and adding features that are not merged into the original repo as soon as possible.
+
 ![npm](https://img.shields.io/npm/d18m/%40rafateoli%2Fdiscord-music-player?style=for-the-badge)
 ![npm](https://img.shields.io/npm/v/%40rafateoli%2Fdiscord-music-player?style=for-the-badge)
 ![CodeFactor Grade](https://img.shields.io/codefactor/grade/github/SushiBtw/discord-music-player?color=%2348aaf1&style=for-the-badge)

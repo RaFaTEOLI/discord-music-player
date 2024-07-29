@@ -1,7 +1,7 @@
 import {Guild, GuildChannelResolvable, GuildMember, StageChannel, VoiceChannel} from "discord.js";
 import {StreamConnection} from "../voice/StreamConnection";
 import {AudioResource, DiscordGatewayAdapterCreator, entersState, joinVoiceChannel, StreamType, VoiceConnectionStatus} from "@discordjs/voice";
-import ytdl from "discord-ytdl-core";
+import ytdl from '@rafateoli/discord-ytdl-core';
 import {
     DefaultPlayerOptions,
     DefaultPlaylistOptions,
