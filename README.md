@@ -1,4 +1,7 @@
 # Discord Music Player
+
+This fork is dedicated to fixing bugs and adding features that are not merged into the original repo as soon as possible.
+
 ![npm](https://img.shields.io/npm/d18m/%40rafateoli%2Fdiscord-music-player?style=for-the-badge)
 ![npm](https://img.shields.io/npm/v/%40rafateoli%2Fdiscord-music-player?style=for-the-badge)
 ![CodeFactor Grade](https://img.shields.io/codefactor/grade/github/SushiBtw/discord-music-player?color=%2348aaf1&style=for-the-badge)
@@ -18,7 +21,7 @@ Package from version v7.0.0 is fully maintained by [SushiBtw](https://github.com
 # Installation
 *Node.JS v16 or newer is required to run this module.*
 ```sh
-npm install --save discord-music-player
+npm install --save @rafateoli/discord-music-player
 ```
 Install **@discordjs/opus**:
 ```sh
@@ -49,7 +52,7 @@ const settings = {
     token: 'YourBotTokenHere'
 };
 
-const { Player } = require("discord-music-player");
+const { Player } = require("@rafateoli/discord-music-player");
 const player = new Player(client, {
     leaveOnEmpty: false, // This options are optional.
 });
@@ -65,7 +68,7 @@ client.login(settings.token);
 
 # Example Usage
 ```js
-const { RepeatMode } = require('discord-music-player');
+const { RepeatMode } = require('@rafateoli/discord-music-player');
 
 client.on('messageCreate', async (message) => {
     const args = message.content.slice(settings.prefix.length).trim().split(/ +/g);
@@ -256,4 +259,4 @@ await initMessage.channel.send(`This message object is hold in Song :D`);
 
 ## Example bots made with this package
 
-- [Music bot](https://github.com/elbkr/music-bot) by [elbkr](https://github.com/elbkr)
+- [Music bot](https://github.com/RaFaTEOLI/discord-bot-player) by [RaFaTEOLI](https://github.com/RaFaTEOLI)
