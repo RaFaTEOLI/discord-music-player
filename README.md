@@ -21,7 +21,7 @@ Package from version v7.0.0 is fully maintained by [SushiBtw](https://github.com
 # Installation
 *Node.JS v16 or newer is required to run this module.*
 ```sh
-npm install --save discord-music-player
+npm install --save @rafateoli/discord-music-player
 ```
 Install **@discordjs/opus**:
 ```sh
@@ -52,7 +52,7 @@ const settings = {
     token: 'YourBotTokenHere'
 };
 
-const { Player } = require("discord-music-player");
+const { Player } = require("@rafateoli/discord-music-player");
 const player = new Player(client, {
     leaveOnEmpty: false, // This options are optional.
 });
@@ -68,7 +68,7 @@ client.login(settings.token);
 
 # Example Usage
 ```js
-const { RepeatMode } = require('discord-music-player');
+const { RepeatMode } = require('@rafateoli/discord-music-player');
 
 client.on('messageCreate', async (message) => {
     const args = message.content.slice(settings.prefix.length).trim().split(/ +/g);
@@ -259,4 +259,4 @@ await initMessage.channel.send(`This message object is hold in Song :D`);
 
 ## Example bots made with this package
 
-- [Music bot](https://github.com/elbkr/music-bot) by [elbkr](https://github.com/elbkr)
+- [Music bot](https://github.com/RaFaTEOLI/discord-bot-player) by [RaFaTEOLI](https://github.com/RaFaTEOLI)
