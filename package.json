@@ -1,6 +1,6 @@
 {
   "name": "@rafateoli/discord-music-player",
-  "version": "9.2.2",
+  "version": "9.2.3",
   "description": "Complete framework to facilitate music commands using discord.js v14 and v13.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
