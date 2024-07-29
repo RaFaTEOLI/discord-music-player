@@ -35,7 +35,7 @@
     "@discordjs/opus": "^0.9.0",
     "@discordjs/voice": "^0.17.0",
     "@distube/ytdl-core": "^4.13.5",
-    "@rafateoli/discord-ytdl-core": "^5.0.7",
+    "@rafateoli/discord-ytdl-core": "^5.0.8",
     "apple-music-metadata": "^1.0.10",
     "axios": "^0.22.0",
     "axios-retry": "^3.2.0",

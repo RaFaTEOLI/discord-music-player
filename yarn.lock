@@ -1423,10 +1423,10 @@
     "@nodelib/fs.scandir" "2.1.5"
     fastq "^1.6.0"
 
-"@rafateoli/discord-ytdl-core@^5.0.6":
-  version "5.0.6"
-  resolved "https://registry.yarnpkg.com/@rafateoli/discord-ytdl-core/-/discord-ytdl-core-5.0.6.tgz#970b05ad87c449da0ceb1f8ee4c9e0e1e2ddd311"
-  integrity sha512-U2qvRvWOea72u6Hc/iH56UH7LIs5VkWhd8IzxT9bkj/8tLFgHNBS1H8ToobFveu1jB6nW8Z0WjzTQ1nB5/anpw==
+"@rafateoli/discord-ytdl-core@^5.0.8":
+  version "5.0.8"
+  resolved "https://registry.yarnpkg.com/@rafateoli/discord-ytdl-core/-/discord-ytdl-core-5.0.8.tgz#5698c78c942662838ce8b538ed5c586efefc5811"
+  integrity sha512-JwsIMMN4VdTaABDDN4DyAb7Qhhrdszed4dlwIRAJxrV6QaRlk3w3kSK8qLnXHNTzZKKwjLyPjVfFOpPJu3e10Q==
   dependencies:
     prism-media "^1.2.9"
 
