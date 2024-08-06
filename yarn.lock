@@ -1124,17 +1124,17 @@
     tslib "^2.6.2"
     ws "^8.16.0"
 
-"@distube/ytdl-core@^4.13.5":
-  version "4.13.5"
-  resolved "https://registry.yarnpkg.com/@distube/ytdl-core/-/ytdl-core-4.13.5.tgz#f9bacaa43225953d0ccd2a682a31d9dbbc378973"
-  integrity sha512-g+4UJIR/auAJbia7iB0aWvaJDbs22P53NySWa47b1NT4xMTDJYguxHFArPrvRkcJrb/AgKjv/XoSZGghpL0CJA==
+"@distube/ytdl-core@^4.13.3":
+  version "4.14.3"
+  resolved "https://registry.yarnpkg.com/@distube/ytdl-core/-/ytdl-core-4.14.3.tgz#ce862c7f6e68bf60a85a2d17a77a5f9c738f6b53"
+  integrity sha512-z6i5EVGEuKhuvuRNyIqafBSs5aRA28HssnWehCRhEtYrxeFgXImfmpKTjUusHYU5vQt1swSVPVb2JCd22P0CPA==
   dependencies:
     http-cookie-agent "^6.0.5"
     m3u8stream "^0.8.6"
     miniget "^4.2.3"
     sax "^1.4.1"
     tough-cookie "^4.1.4"
-    undici "^6.19.2"
+    undici five
 
 "@eslint/eslintrc@^0.4.3":
   version "0.4.3"
@@ -1157,6 +1157,11 @@
   integrity sha512-OU5P5mJyD3OoWYMWY+yIgwvgNS9cFAU10f+DDuvtogcWQOoJIsQ4Hy2McSfUfhKjq8L0FuWVb4Rt7kgA+XK86A==
   dependencies:
     heap ">= 0.2.0"
+
+"@fastify/busboy@^2.0.0":
+  version "2.1.1"
+  resolved "https://registry.yarnpkg.com/@fastify/busboy/-/busboy-2.1.1.tgz#b9da6a878a371829a0502c9b6c1c143ef6663f4d"
+  integrity sha512-vBZP4NlzfOlerQTnba4aqZoMhE/a9HY7HRqoOPaETQcSQuWEIyZMHGfVu6w9wGtGK5fED5qRs2DteVCjOH60sA==
 
 "@humanwhocodes/config-array@^0.5.0":
   version "0.5.0"
@@ -1423,10 +1428,10 @@
     "@nodelib/fs.scandir" "2.1.5"
     fastq "^1.6.0"
 
-"@rafateoli/discord-ytdl-core@^5.0.8":
-  version "5.0.8"
-  resolved "https://registry.yarnpkg.com/@rafateoli/discord-ytdl-core/-/discord-ytdl-core-5.0.8.tgz#5698c78c942662838ce8b538ed5c586efefc5811"
-  integrity sha512-JwsIMMN4VdTaABDDN4DyAb7Qhhrdszed4dlwIRAJxrV6QaRlk3w3kSK8qLnXHNTzZKKwjLyPjVfFOpPJu3e10Q==
+"@rafateoli/discord-ytdl-core@^5.0.9":
+  version "5.0.9"
+  resolved "https://registry.yarnpkg.com/@rafateoli/discord-ytdl-core/-/discord-ytdl-core-5.0.9.tgz#584ac48eb24e9012abf6389730491f4b2b506c73"
+  integrity sha512-nboi+DREfnjrbEsWUbQKE9mdpwxNNc7o4TfmCkYMt7ADKmzq/hEtJx75OWsH8T3vpVWTZsJhpMmO7tEfRKuYdg==
   dependencies:
     prism-media "^1.2.9"
 
@@ -5545,10 +5550,12 @@ undici@6.13.0:
   resolved "https://registry.yarnpkg.com/undici/-/undici-6.13.0.tgz#7edbf4b7f3aac5f8a681d515151bf55cb3589d72"
   integrity sha512-Q2rtqmZWrbP8nePMq7mOJIN98M0fYvSgV89vwl/BQRT4mDOeY2GXZngfGpcBBhtky3woM7G24wZV3Q304Bv6cw==
 
-undici@^6.19.2:
-  version "6.19.4"
-  resolved "https://registry.yarnpkg.com/undici/-/undici-6.19.4.tgz#5ec3b191699a1678ee0aa9ed14e443a682d0f7a8"
-  integrity sha512-i3uaEUwNdkRq2qtTRRJb13moW5HWqviu7Vl7oYRYz++uPtGHJj+x7TGjcEuwS5Mt2P4nA0U9dhIX3DdB6JGY0g==
+undici@five:
+  version "5.28.4"
+  resolved "https://registry.yarnpkg.com/undici/-/undici-5.28.4.tgz#6b280408edb6a1a604a9b20340f45b422e373068"
+  integrity sha512-72RFADWFqKmUb2hmmvNODKL3p9hcB6Gt2DOQMis1SEBaV6a4MH8soBvzg+95CYhCKPFedut2JY9bMfrDl9D23g==
+  dependencies:
+    "@fastify/busboy" "^2.0.0"
 
 unfetch@^4.2.0:
   version "4.2.0"
