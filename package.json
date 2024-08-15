@@ -1,6 +1,6 @@
 {
   "name": "@rafateoli/discord-music-player",
-  "version": "9.2.6",
+  "version": "9.2.7",
   "description": "Complete framework to facilitate music commands using discord.js v14 and v13.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -34,8 +34,8 @@
   "dependencies": {
     "@discordjs/opus": "^0.9.0",
     "@discordjs/voice": "^0.17.0",
-    "@distube/ytdl-core": "^4.13.3",
-    "@rafateoli/discord-ytdl-core": "^5.0.9",
+    "@distube/ytdl-core": "^4.13.4",
+    "@rafateoli/discord-ytdl-core": "^5.0.10",
     "apple-music-metadata": "^1.0.10",
     "axios": "^0.22.0",
     "axios-retry": "^3.2.0",
