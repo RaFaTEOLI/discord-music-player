@@ -1390,6 +1390,13 @@
     "@nodelib/fs.scandir" "2.1.5"
     fastq "^1.6.0"
 
+"@rafateoli/discord-ytdl-core@^5.0.11":
+  version "5.0.11"
+  resolved "https://registry.yarnpkg.com/@rafateoli/discord-ytdl-core/-/discord-ytdl-core-5.0.11.tgz#692538ae33f7610508c02684ba4c02169dbb8d07"
+  integrity sha512-yn2IezTKuwOmyP9ACG7qxTmYqdGa6CNPgB1zAoTJNo0AZkL4KJViYrrnLZGy646ED0ks6ZDHLkNWTogSBHW10A==
+  dependencies:
+    prism-media "^1.2.9"
+
 "@sapphire/async-queue@^1.5.0":
   version "1.5.0"
   resolved "https://registry.yarnpkg.com/@sapphire/async-queue/-/async-queue-1.5.0.tgz#2f255a3f186635c4fb5a2381e375d3dfbc5312d8"
@@ -2501,13 +2508,6 @@ discord-api-types@^0.38.16:
   version "0.38.31"
   resolved "https://registry.yarnpkg.com/discord-api-types/-/discord-api-types-0.38.31.tgz#023c7f18662dc4a44a22798300f44e4b148cafb1"
   integrity sha512-kC94ANsk8ackj8ENTuO8joTNEL0KtymVhHy9dyEC/s4QAZ7GCx40dYEzQaadyo8w+oP0X8QydE/nzAWRylTGtQ==
-
-discord-ytdl-core@^5.0.4:
-  version "5.0.4"
-  resolved "https://registry.yarnpkg.com/discord-ytdl-core/-/discord-ytdl-core-5.0.4.tgz#84a2af1a8e8c235b4fc109b23350d12782ab66cd"
-  integrity sha512-O+G9wuCw5TERR9iHZFMYnYQbs/ZGudDc9cxa1OKSV5TdcBYrHGS1JqvE90ZvSQ6SmS4XvqtOf/Okls6yiGJ3sg==
-  dependencies:
-    prism-media "^1.2.9"
 
 "discord.js-docgen@github:discordjs/docgen#ts-patch":
   version "0.9.0"

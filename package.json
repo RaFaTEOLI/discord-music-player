@@ -37,7 +37,7 @@
     "apple-music-metadata": "^1.0.10",
     "axios": "^0.22.0",
     "axios-retry": "^3.2.0",
-    "discord-ytdl-core": "^5.0.4",
+    "@rafateoli/discord-ytdl-core": "^5.0.11",
     "domhandler": "^4.2.2",
     "ffmpeg-static": "^5.0.2",
     "htmlparser2": "^7.1.2",
