@@ -321,7 +321,6 @@ export class Utils {
             SpotifyResult.songs = (
                 await Promise.all(
                     (SpotifyResultData.trackList ?? []).map(async (track: any, index: number) => {
-                        console.log(track);
                         if (Limit !== -1 && index >= Limit)
                             return null;
                         const Result = await this.search(
