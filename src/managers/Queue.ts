@@ -177,6 +177,12 @@ export class Queue<T = unknown> {
             connection = await entersState(connection, VoiceConnectionStatus.Ready, 15 * 1000);
             _connection = new StreamConnection(connection, channel);
         } catch (err) {
+            // Emit/log the original error to help debugging, then destroy the connection
+            try {
+                this.player.emit('error', (err as Error).message ?? err, this);
+            } catch {}
+            // Also log to console as a fallback so it's visible in logs
+            try { console.error('Voice connection failed:', err); } catch {}
             connection.destroy();
             throw new DMPError(DMPErrors.VOICE_CONNECTION_ERROR);
         }
