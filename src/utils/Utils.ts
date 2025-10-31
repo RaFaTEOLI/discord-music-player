@@ -79,28 +79,31 @@ export class Utils {
     static async search(Search: string, SOptions: PlayOptions = DefaultPlayOptions, Queue: Queue, Limit: number = 1): Promise<Song[]> {
         SOptions = Object.assign({}, DefaultPlayOptions, SOptions);
         try {
-            let Result = await YTSR(Search, {
-                limit: Limit,
-                type: 'video',
-                ...(SOptions?.duration && { duration: SOptions.duration }),
-                ...(SOptions?.uploadDate && { uploadDate: SOptions.uploadDate }),
-                ...(SOptions?.sortBy && SOptions.sortBy !== 'relevance' && { sortBy: SOptions.sortBy })
-            });
+                let Result = await YTSR(Search, {
+                    limit: Limit,
+                    safeSearch: false,
+                    ...(SOptions?.duration && { duration: SOptions.duration }),
+                    ...(SOptions?.uploadDate && { uploadDate: SOptions.uploadDate }),
+                    ...(SOptions?.sortBy && SOptions.sortBy !== 'relevance' && { sortBy: SOptions.sortBy })
+                });
 
-            let items = Result.items;
+                if (!Result || !Array.isArray(Result.items)) {
+                    throw DMPErrors.SEARCH_NULL;
+                }
 
-            let songs: (Song | null)[] = items.map(item => {
-                if (item?.type?.toLowerCase() !== 'video')
-                    return null;
-                return new Song({
-                    name: item.name,
-                    url: item.url,
-                    duration: item.duration,
-                    author: item.author!.name,
-                    isLive: item.isLive,
-                    thumbnail: item.thumbnail,
-                } as RawSong, Queue, SOptions.requestedBy);
-            }).filter(I => I);
+                let songs: (Song | null)[] = Result.items
+                    .filter(item => item.type === 'video')
+                    .map(item => {
+                        const video = item as Video;
+                        return new Song({
+                            name: video.name,
+                            url: video.url,
+                            duration: video.duration,
+                            author: video.author?.name || '',
+                            isLive: video.isLive || false,
+                            thumbnail: video.thumbnail || '',
+                        } as RawSong, Queue, SOptions.requestedBy);
+                    });
 
             return songs as Song[];
         } catch (e) {
